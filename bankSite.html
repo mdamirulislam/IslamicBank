@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Main Islamic Bank Site</title>
+</head>
+<body>
+    <h1 class='text-5xl text-center mt-16'>Give me <span class='font-semibold text-blue-500'>Money</span></h1>
+    <main>
+        <section'>
+            <div class='grid grid-cols-3 gap-4 text-white w-3/4 mx-auto'>
+                 <div class='bg-blue-300 p-5 mt-40 rounded'>
+                     <h4 class='text-5xl '>Deposit</h4>
+                     <h2 class='text-5xl font-semibold'>$<span id='total-deposit'>00</span></h2>
+                 </div>
+                 <div class='bg-green-400 p-5 mt-40 rounded'>
+                     <h4 class='text-5xl '>Withdraw</h4>
+                     <h2 class='text-5xl font-semibold'>$ <span id='total-withdraw'>00</span> </h2>
+                 </div>
+                 <div class='bg-yellow-300 p-5 mt-40 rounded'>
+                     <h4 class='text-5xl '>Balance</h4>
+                     <h2 class='text-5xl font-semibold'>$<span id='total-balance'>1240</span></h2>
+                 </div>
+            </div>
+            <div class='w-3/4 mx-auto grid grid-cols-2 gap-8'>
+                <div class='bg-red-100 p-8 mt-8 rounded'>
+                    <h2 class='text-2xl '>PLase Deposit </h2>
+                    <input id='deposit-input' class=' border-2 border-gray-300 block p-2 rounded mb-5 w-3/4' type="text" placeholder="enter your email">
+                    <button id='deposit-btn' class=' bg-yellow-600 px-8 py-2 rounded text-medium text-white'>Deposit</button>
+                </div>
+                <div class='bg-purple-100 p-8 mt-8 rounded'>
+                    <h2 class='text-2xl '>PLase Withdraw </h2>
+                    <input id='withdraw-input' class=' border-2 border-gray-300 block p-2 rounded mb-5 w-3/4' type="text" placeholder="enter your email">
+                    <button id='withdraw-btn' class=' bg-yellow-600 px-8 py-2 rounded text-medium text-white'>Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
